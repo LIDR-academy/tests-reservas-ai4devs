@@ -1,0 +1,9 @@
+aforo (tests/reservas.spec.ts)
+  ✔ Nogal rechaza nueve (0.55ms)
+  ✔ Nogal acepta seis (0.08ms)
+  ✔ Roble acepta nueve (0.05ms)
+  ✔ Roble rechaza trece (0.04ms)
+
+ PASSED 
+
+Tests  4 passed (4)

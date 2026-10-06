@@ -1,0 +1,14 @@
+cancelación tardía (regla sola) (tests/regla.spec.ts)
+  ✔ dos horas justas no es tardía (1.04ms)
+  ✔ una hora y media es tardía (0.09ms)
+  ✔ tres horas no es tardía (0.06ms)
+  ✔ el minuto anterior a las dos horas es tardía (0.05ms)
+  ✔ el minuto posterior a las dos horas no es tardía (0.05ms)
+  ✔ diez minutos es tardía (0.04ms)
+  ✔ el cambio de día, con 45 minutos, es tardía (0.03ms)
+  ✔ el cambio de día, con dos horas y media, no es tardía (0.03ms)
+
+ PASSED 
+
+Tests  8 passed (8)
+ Time  5ms

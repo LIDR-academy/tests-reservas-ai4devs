@@ -1,0 +1,2 @@
+  ✔ a las 10:00 la sala Nogal está abierta (0.83ms)
+  ✔ a las 22:00 la sala Nogal está cerrada (0.08ms)

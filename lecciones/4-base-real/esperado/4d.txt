@@ -1,0 +1,5 @@
+dentro de la transacción, la reserva recibe el id 1
+tras el ROLLBACK, la siguiente recibe el id 2
+tras DELETE FROM reservas, la siguiente recibe el id 3
+tras TRUNCATE reservas, la siguiente recibe el id 4
+tras TRUNCATE reservas RESTART IDENTITY, la siguiente recibe el id 1

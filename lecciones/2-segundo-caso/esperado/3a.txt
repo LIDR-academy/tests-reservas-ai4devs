@@ -1,0 +1,6 @@
+aforo (tests/reservas.spec.ts)
+  ✔ la sala Nogal rechaza una reserva para nueve (0.48ms)
+
+ PASSED 
+
+Tests  1 passed (1)

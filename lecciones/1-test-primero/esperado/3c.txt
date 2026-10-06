@@ -1,0 +1,6 @@
+  ✖ rechaza si empieza dentro de una reserva existente (0.39ms)
+  ✖ detecta el solape con cualquiera de varias reservas existentes (0.14ms)
+
+ℹ AssertionError: expected undefined to deeply equal { sala: 'A', …(2) }
+
+Tests  7 passed, 2 failed (9)

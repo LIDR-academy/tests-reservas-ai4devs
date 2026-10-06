@@ -1,0 +1,14 @@
+reservas de salas (b/reservas.spec.ts)
+  ✖ rechaza una reserva que se solapa con otra de la misma sala (0.81ms)
+
+- Expected  - 1
++ Received  + 1
+
+- 409
++ 201
+
+ℹ AssertionError: expected 201 to equal 409
+
+ ❯ 10 ┃      assert.equal(respuesta.estado, 409)
+
+Tests  1 failed (1)

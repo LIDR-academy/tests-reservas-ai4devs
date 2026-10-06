@@ -1,0 +1,9 @@
+❯ cancelación tardía (contrato) / una hora y media es tardía
+
+- Expected  - 1
++ Received  + 1
+
+- 200
++ 401
+
+ℹ AssertionError: expected 401 to equal 200

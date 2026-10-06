@@ -1,0 +1,7 @@
+Los tests de este archivo se han quedado desactualizados y toca regenerarlos. Escribe el archivo de tests con Japa (@japa/runner y @japa/assert) leyendo el código de abajo. Responde solo con el contenido del archivo, sin explicaciones, sin bloque de código markdown. Importa desde './cancelar.ts'.
+
+```ts
+export function reembolso(importe: number, horasDeMargen: number): number {
+  return horasDeMargen > 24 ? importe : 0
+}
+```

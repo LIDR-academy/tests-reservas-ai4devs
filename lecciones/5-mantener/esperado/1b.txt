@@ -1,0 +1,2 @@
+Tests  4 passed (4)
+All files |     100 |      100 |     100 |     100 |

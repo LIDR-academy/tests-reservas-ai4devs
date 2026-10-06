@@ -1,0 +1,17 @@
+cancelación tardía (contrato) (tests/contrato.spec.ts)
+  ✖ quien cancela una reserva que empieza en 45 minutos recibe cancelacionTardia: true (23.74ms)
+ ERRORS 
+
+❯ cancelación tardía (contrato) / quien cancela una reserva que empieza en 45 minutos recibe cancelacionTardia: true
+
+- Expected  - 1
++ Received  + 1
+
+- true
++ false
+
+ℹ AssertionError: expected false to be true
+
+ FAILED 
+
+Tests  1 failed (1)

@@ -1,0 +1,4 @@
+texto contra texto, <: true
+objeto contra texto, <: false
+objeto contra texto, >: false
+el texto, convertido a número: NaN

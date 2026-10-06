@@ -1,0 +1,38 @@
+# Dos bases PostgreSQL (la de trabajo y la de pruebas) y un contenedor de Node 24 desde el que se
+# ejecuta todo. No hace falta tener Node ni PostgreSQL instalados, y ninguna base publica puertos.
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_PASSWORD: x
+      POSTGRES_DB: reservas_trabajo
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d reservas_trabajo"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
+
+  db_pruebas:
+    image: postgres:17
+    environment:
+      POSTGRES_PASSWORD: x
+      POSTGRES_DB: reservas_pruebas
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d reservas_pruebas"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
+
+  app:
+    image: node:24
+    working_dir: /repo
+    user: "${UID_GID:-1000:1000}"
+    volumes:
+      - .:/repo
+    environment:
+      HOME: /tmp
+      PGUSER: postgres
+      PGPASSWORD: x
+      HOST_TRABAJO: db
+      HOST_PRUEBAS: db_pruebas
+    profiles: ["herramientas"]

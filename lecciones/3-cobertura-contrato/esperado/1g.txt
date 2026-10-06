@@ -1,0 +1,5 @@
+cancelación tardía (regla sola) (tests/regla.spec.ts)
+
+ PASSED 
+
+Tests  8 passed (8)

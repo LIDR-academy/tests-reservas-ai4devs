@@ -1,0 +1,11 @@
+name: verificar
+on:
+  push:
+  pull_request:
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobar que cada ejemplo da la salida que publica su lección
+        run: make verificar

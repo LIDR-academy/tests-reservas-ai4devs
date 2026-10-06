@@ -1,0 +1,10 @@
+✖
+ ERRORS 
+
+❯ solapamiento, vaciando las tablas entre tests / rechaza una reserva que se solapa: Setup hook
+
+ℹ error: relation "reservas" does not exist
+
+ FAILED 
+
+Tests  1 failed (1)

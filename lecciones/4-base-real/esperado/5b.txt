@@ -1,0 +1,12 @@
+✖✖
+ ERRORS 
+
+❯ qué salas están libres / con el juego de datos común
+
+ℹ TypeError: Cannot read properties of null (reading 'toLocaleString')
+
+❯ qué salas están libres / con los datos mínimos: una sala sin reservas
+
+ℹ TypeError: Cannot read properties of null (reading 'toLocaleString')
+
+Tests  2 failed (2)

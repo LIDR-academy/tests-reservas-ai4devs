@@ -1,0 +1,12 @@
+✖
+ ERRORS 
+
+❯ solapamiento contra PostgreSQL de verdad / rechaza una reserva que se solapa
+
+- Expected  - 1
++ Received  + 1
+
+- false
++ true
+
+ℹ AssertionError: expected true to be false

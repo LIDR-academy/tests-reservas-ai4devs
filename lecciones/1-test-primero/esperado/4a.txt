@@ -1,0 +1,3 @@
+  ✖ permite reservas consecutivas (fin == inicio) (0.23ms)
+ℹ AssertionError: expected 409 to equal 201
+Tests  8 passed, 1 failed (9)

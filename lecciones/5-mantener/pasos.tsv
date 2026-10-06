@@ -1,0 +1,16 @@
+# id	dónde	descripción	comando
+1a	app	Cuatro tests sin afirmaciones sobre la regla sana: verdes y 100 % de cobertura	COBERTURA=1 ./lecciones/5-mantener/ayuda/par.sh aforo-sano.ts aforo.ts cobertura-vacios.spec.ts
+1b	app	Los mismos cuatro tests con la condición del aforo invertida: siguen verdes y siguen al 100 %	COBERTURA=1 ./lecciones/5-mantener/ayuda/par.sh aforo-invertido.ts aforo.ts cobertura-vacios.spec.ts
+1c	app	Tres tests escritos desde la regla contra la condición invertida: dos rojos	COBERTURA=1 ./lecciones/5-mantener/ayuda/par.sh aforo-invertido.ts aforo.ts cobertura-desde-la-regla.spec.ts
+1d	app	Los mismos tres tests sobre la regla sana: verdes, y la cobertura baja al 86,66 %	COBERTURA=1 ./lecciones/5-mantener/ayuda/par.sh aforo-sano.ts aforo.ts cobertura-desde-la-regla.spec.ts
+2a	app	Los nueve tests con afirmaciones que escribió un agente real, sobre la regla sana: verdes y 100 %	COBERTURA=1 ./lecciones/5-mantener/ayuda/par.sh aforo-sano.ts aforo.ts cobertura-agente.spec.ts
+2b	app	Los nueve tests del agente contra la condición invertida: tres rojos, y el mismo 100 % de cobertura	COBERTURA=1 ./lecciones/5-mantener/ayuda/par.sh aforo-invertido.ts aforo.ts cobertura-agente.spec.ts
+3a	app	El espía sobre horasHasta y dos tests de salida, con el código original: tres verdes	./lecciones/5-mantener/ayuda/par.sh cancelaciones-original.ts cancelaciones.ts detalle-cancelaciones.spec.ts
+3b	app	Refactor que mete la cuenta dentro de cancelar (mismo comportamiento): el espía se pone rojo, los de salida siguen verdes	./lecciones/5-mantener/ayuda/par.sh cancelaciones-refactor.ts cancelaciones.ts detalle-cancelaciones.spec.ts
+3c	app	La resta de horasHasta al revés (el reembolso se rompe): el espía sigue verde, el de 30 horas rojo	./lecciones/5-mantener/ayuda/par.sh cancelaciones-resta-invertida.ts cancelaciones.ts detalle-cancelaciones.spec.ts
+4a	app	Test que lee el reloj del sistema, con el reloj a las 10:00: verde	AHORA=2026-10-05T10:00:00 ./lecciones/5-mantener/ayuda/par.sh horario.ts horario.ts hora-reloj-real.spec.ts
+4b	app	El mismo test y el mismo código con el reloj a las 22:00: rojo	AHORA=2026-10-05T22:00:00 ./lecciones/5-mantener/ayuda/par.sh horario.ts horario.ts hora-reloj-real.spec.ts
+4c	app	Los dos tests que fijan la hora ellos mismos, con el reloj a las 10:00: verdes	AHORA=2026-10-05T10:00:00 ./lecciones/5-mantener/ayuda/par.sh horario.ts horario.ts hora-reloj-fijado.spec.ts
+4d	app	Los mismos dos tests con el reloj a las 22:00: verdes	AHORA=2026-10-05T22:00:00 ./lecciones/5-mantener/ayuda/par.sh horario.ts horario.ts hora-reloj-fijado.spec.ts
+5a	app	Los nueve tests que regeneró un agente real desde el código con el fallo (> en vez de >=): los nueve pasan	./lecciones/5-mantener/ayuda/par.sh reembolso-estricto.ts cancelar.ts regenerar-agente.spec.ts
+5b	app	El test escrito desde la regla (24 horas justas se devuelve todo): rojo	./lecciones/5-mantener/ayuda/par.sh reembolso-estricto.ts cancelar.ts regenerar-desde-la-regla.spec.ts

@@ -1,0 +1,9 @@
+aforo (tests/reservas.spec.ts)
+  ✔ Nogal rechaza nueve (0.53ms)
+  ✔ Roble acepta nueve (0.09ms)
+  ✔ Nogal acepta cinco, justo por debajo de su aforo (0.05ms)
+  ✔ Nogal rechaza siete, una más que su aforo (0.04ms)
+
+ PASSED 
+
+Tests  4 passed (4)

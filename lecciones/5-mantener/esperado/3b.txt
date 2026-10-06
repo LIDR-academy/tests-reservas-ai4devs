@@ -1,0 +1,5 @@
+  ✖ cancelar consulta las horas que faltan con horasHasta (0.71ms)
+  ✔ cancelar con 30 horas de margen devuelve todo el importe (0.43ms)
+  ✔ cancelar con 2 horas de margen no devuelve nada (0.08ms)
+
+ℹ TypeError: The argument 'methodName' must be a method. Received undefined

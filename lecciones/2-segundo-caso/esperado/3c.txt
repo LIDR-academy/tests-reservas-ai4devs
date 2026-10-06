@@ -1,0 +1,22 @@
+aforo (tests/reservas.spec.ts)
+  ✔ Nogal rechaza nueve (0.55ms)
+  ✔ Roble acepta nueve (0.08ms)
+  ✔ Nogal acepta seis, justo su aforo (0.06ms)
+  ✖ Nogal rechaza siete, una más que su aforo (0.33ms)
+ ERRORS 
+
+❯ aforo / Nogal rechaza siete, una más que su aforo
+
+- Expected  - 1
++ Received  + 1
+
+- false
++ true
+
+ℹ AssertionError: expected true to be false
+
+[1/1]─
+
+ FAILED 
+
+Tests  3 passed, 1 failed (4)

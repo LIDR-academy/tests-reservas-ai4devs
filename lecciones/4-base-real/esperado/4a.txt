@@ -1,0 +1,6 @@
+✖
+ ERRORS 
+
+❯ transacción por test / el informe de la sala Nogal lista la reserva sembrada
+
+ℹ AssertionError: expected [] to have a length of 1 but got +0

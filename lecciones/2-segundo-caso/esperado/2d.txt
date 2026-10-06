@@ -1,0 +1,6 @@
+aforo (tests/reservas.spec.ts)
+  ✔ la sala Cedro, de cuatro plazas, rechaza cinco (0.5ms)
+
+ PASSED 
+
+Tests  1 passed (1)

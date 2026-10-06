@@ -1,0 +1,10 @@
+✔
+
+ PASSED 
+
+Tests  1 passed (1)
+ Time  17ms
+ salas | reservas 
+-------+----------
+     2 |        3
+(1 row)

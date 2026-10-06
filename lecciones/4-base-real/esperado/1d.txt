@@ -1,0 +1,6 @@
+✔
+
+ PASSED 
+
+Tests  1 passed (1)
+ Time  2ms

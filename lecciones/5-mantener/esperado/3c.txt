@@ -1,0 +1,5 @@
+  ✔ cancelar consulta las horas que faltan con horasHasta (0.86ms)
+  ✖ cancelar con 30 horas de margen devuelve todo el importe (0.74ms)
+  ✔ cancelar con 2 horas de margen no devuelve nada (0.08ms)
+
+ℹ AssertionError: expected { reembolso: +0 } to deeply equal { reembolso: 80 }

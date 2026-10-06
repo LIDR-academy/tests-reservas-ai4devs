@@ -1,0 +1,13 @@
+{ ok: true }
+{ ok: true }
+✖
+ ERRORS 
+
+❯ default / dos peticiones simultáneas a la misma sala
+
+ℹ AssertionError: expected [ { id: 1 }, { id: 2 } ] to have a length of 1 but got 2
+ id | sala  |         inicio         |          fin           
+----+-------+------------------------+------------------------
+  1 | Nogal | 2026-10-06 10:00:00+00 | 2026-10-06 11:00:00+00
+  2 | Nogal | 2026-10-06 10:30:00+00 | 2026-10-06 11:30:00+00
+(2 rows)

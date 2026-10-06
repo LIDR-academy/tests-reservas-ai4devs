@@ -1,0 +1,12 @@
+# id	dónde	descripción	comando
+1a	app	El test de la sala Nogal, escrito antes que el código, contra un esqueleto que acepta todo: rojo (expected 201 to equal 409)	./scripts/par.sh 1-test-primero 00-esqueleto.ts t1-nogal.spec.ts
+1b	app	Los tres tests del segundo encargo contra el mismo esqueleto: solo el de Nogal en rojo, los otros dos ya pasaban	./scripts/par.sh 1-test-primero 00-esqueleto.ts t2-suite-b.spec.ts
+2a	app	La suite de nueve tests del primer encargo contra la implementación del primer encargo: verde a la primera	./scripts/par.sh 1-test-primero 01-impl-a.ts t3-suite-a.spec.ts
+2b	app	Las decisiones de producto de esa implementación: 409 con el horario ajeno (campo conflicto) y el borde exacto permitido	mkdir -p lecciones/1-test-primero/src && cp lecciones/1-test-primero/codigo/01-impl-a.ts lecciones/1-test-primero/src/reservas.ts && node lecciones/1-test-primero/ayuda/decisiones.ts
+3a	app	Los tres tests del segundo encargo contra la implementación del segundo encargo: verde	./scripts/par.sh 1-test-primero 02-impl-b.ts t2-suite-b.spec.ts
+3b	app	La suite del segundo encargo contra la implementación del primero: rojo en «el rechazo no revela el horario»	./scripts/par.sh 1-test-primero 01-impl-a.ts t2-suite-b.spec.ts
+3c	app	La suite del primer encargo contra la implementación del segundo: dos rojos, los que esperan el campo conflicto	./scripts/par.sh 1-test-primero 02-impl-b.ts t3-suite-a.spec.ts
+4a	app	Mutación del borde (< a <=) en la implementación del primer encargo, con su suite entera: rojo en el test del borde	./scripts/par.sh 1-test-primero 03-impl-a-mutada.ts t3-suite-a.spec.ts
+4b	app	La misma mutación en la implementación del segundo encargo, con su suite entera: rojo en el test del borde	./scripts/par.sh 1-test-primero 04-impl-b-mutada.ts t2-suite-b.spec.ts
+4c	app	Control: solo el test de Nogal contra la implementación del segundo encargo sin mutar: verde	./scripts/par.sh 1-test-primero 02-impl-b.ts t1-nogal.spec.ts
+4d	app	Solo el test de Nogal contra la implementación mutada: sigue en verde, no ve el borde	./scripts/par.sh 1-test-primero 04-impl-b-mutada.ts t1-nogal.spec.ts

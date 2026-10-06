@@ -1,0 +1,5 @@
+cancelación tardía (contrato) (tests/contrato.spec.ts)
+
+ PASSED 
+
+Tests  1 passed (1)

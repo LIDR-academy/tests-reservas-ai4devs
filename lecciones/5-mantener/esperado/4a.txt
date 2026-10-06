@@ -1,0 +1,3 @@
+  ✔ la sala Nogal está abierta en horario de oficina (0.83ms)
+
+Tests  1 passed (1)

@@ -1,0 +1,5 @@
+reservas de salas (b/reservas.spec.ts)
+  ✖ rechaza una reserva que se solapa con otra de la misma sala (0.78ms)
+  ✔ permite una reserva que empieza justo cuando otra acaba (0.35ms)
+  ✔ el rechazo no revela el horario de la otra reserva (0.21ms)
+Tests  2 passed, 1 failed (3)

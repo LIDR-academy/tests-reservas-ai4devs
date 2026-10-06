@@ -1,0 +1,20 @@
+aforo (tests/reservas.spec.ts)
+  ✔ la sala Nogal rechaza una reserva para nueve (0.49ms)
+  ✖ la sala Roble acepta una reserva para nueve (0.33ms)
+ ERRORS 
+
+❯ aforo / la sala Roble acepta una reserva para nueve
+
+- Expected  - 1
++ Received  + 1
+
+- true
++ false
+
+ℹ AssertionError: expected false to be true
+
+[1/1]─
+
+ FAILED 
+
+Tests  1 passed, 1 failed (2)

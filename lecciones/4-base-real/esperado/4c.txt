@@ -1,0 +1,3 @@
+   aviso del motor: there is already a transaction in progress
+   aviso del motor: there is no transaction in progress
+   reservas que ve otra conexión después del ROLLBACK del test: 2

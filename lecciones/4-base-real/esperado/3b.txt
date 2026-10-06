@@ -1,0 +1,14 @@
+
+ ERRORS 
+
+❯ solapamiento, vaciando las tablas entre tests: Setup hook
+
+ℹ Error: getaddrinfo ENOTFOUND db_pruebas
+
+ FAILED 
+
+Tests   (0)
+ salas | reservas 
+-------+----------
+     2 |        3
+(1 row)

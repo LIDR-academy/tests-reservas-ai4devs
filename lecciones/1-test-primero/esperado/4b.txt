@@ -1,0 +1,2 @@
+  ✖ permite una reserva que empieza justo cuando otra acaba (0.25ms)
+ℹ AssertionError: expected 409 to equal 201

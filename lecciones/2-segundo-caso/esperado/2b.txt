@@ -1,0 +1,19 @@
+aforo (tests/reservas.spec.ts)
+  ✖ la sala Cedro, de cuatro plazas, rechaza cinco (0.8ms)
+ ERRORS 
+
+❯ aforo / la sala Cedro, de cuatro plazas, rechaza cinco
+
+- Expected  - 1
++ Received  + 1
+
+- false
++ true
+
+ℹ AssertionError: expected true to be false
+
+[1/1]─
+
+ FAILED 
+
+Tests  1 failed (1)

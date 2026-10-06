@@ -1,0 +1,7 @@
+aforo (tests/reservas.spec.ts)
+  ✔ la sala Nogal rechaza una reserva para nueve (0.49ms)
+  ✔ la sala Roble acepta una reserva para nueve (0.08ms)
+
+ PASSED 
+
+Tests  2 passed (2)

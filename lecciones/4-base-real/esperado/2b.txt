@@ -1,0 +1,12 @@
+{ ok: true }
+rechazada: conflicting key value violates exclusion constraint "reservas_sin_solape"
+✔
+
+ PASSED 
+
+Tests  1 passed (1)
+ Time  150ms
+ id | sala  |         inicio         |          fin           
+----+-------+------------------------+------------------------
+  1 | Nogal | 2026-10-06 10:00:00+00 | 2026-10-06 11:00:00+00
+(1 row)

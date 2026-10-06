@@ -1,0 +1,12 @@
+crearReserva (a/reservas.spec.ts)
+  ✔ crea la reserva si no hay ninguna previa (0.85ms)
+  ✔ rechaza una reserva idéntica (0.43ms)
+  ✔ rechaza si empieza dentro de una reserva existente (0.11ms)
+  ✔ rechaza si termina dentro de una reserva existente (0.09ms)
+  ✔ rechaza si envuelve por completo una reserva existente (0.12ms)
+  ✔ rechaza si queda contenida en una reserva existente (0.09ms)
+  ✔ permite reservas consecutivas (fin == inicio) (0.26ms)
+  ✔ permite el mismo horario en otra sala (0.1ms)
+  ✔ detecta el solape con cualquiera de varias reservas existentes (0.09ms)
+
+Tests  9 passed (9)

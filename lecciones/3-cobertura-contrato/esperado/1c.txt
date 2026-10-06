@@ -1,0 +1,3 @@
+tipo del valor que llega de la base: Date
+esCancelacionTardia(inicio, ahora) = false
+y con el mismo instante pasado a texto: true

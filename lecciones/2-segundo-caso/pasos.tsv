@@ -1,0 +1,18 @@
+# id	dónde	descripción	comando
+1a	app	El test de la sala Nogal contra un esqueleto que acepta todo: rojo	./scripts/par.sh 2-segundo-caso 00-esqueleto.ts t1-nogal.spec.ts
+1b	app	El atajo `if (asistentes > 6)` con ese mismo test: verde	./scripts/par.sh 2-segundo-caso 01-atajo.ts t1-nogal.spec.ts
+1c	app	Se añade el test de la sala Roble: el atajo vuelve al rojo	./scripts/par.sh 2-segundo-caso 01-atajo.ts t2-nogal-roble.spec.ts
+1d	app	El aforo se lee de la sala: verde con los dos tests	./scripts/par.sh 2-segundo-caso 02-general.ts t2-nogal-roble.spec.ts
+1e	app	Una tabla de aforos por nombre también pasa los dos casos	./scripts/par.sh 2-segundo-caso 03-atajo-tabla.ts t2-nogal-roble.spec.ts
+2a	app	El atajo de la tabla pasa una suite de cuatro casos	./scripts/par.sh 2-segundo-caso 03-atajo-tabla.ts t3-cuatro-casos.spec.ts
+2b	app	El mismo atajo falla con una sala que la suite no menciona (Cedro)	./scripts/par.sh 2-segundo-caso 03-atajo-tabla.ts t3b-sala-nueva.spec.ts
+2c	app	El código general pasa la suite de cuatro casos	./scripts/par.sh 2-segundo-caso 02-general.ts t3-cuatro-casos.spec.ts
+2d	app	El código general también pasa el caso de la sala Cedro	./scripts/par.sh 2-segundo-caso 02-general.ts t3b-sala-nueva.spec.ts
+3a	app	Detector: el umbral del atajo pasa de 6 a 7, con un solo caso: verde	./scripts/par.sh 2-segundo-caso 01b-atajo-umbral-7.ts t1-nogal.spec.ts
+3a2	app	Detector: el umbral del atajo pasa a 8: sigue verde	./scripts/par.sh 2-segundo-caso 01c-atajo-umbral-8.ts t1-nogal.spec.ts
+3a3	app	Detector: el umbral del atajo pasa a 9: ahora sí rojo	./scripts/par.sh 2-segundo-caso 01d-atajo-umbral-9.ts t1-nogal.spec.ts
+3b	app	Detector sobre el código general (umbral una plaza más) con dos casos: verde	./scripts/par.sh 2-segundo-caso 02b-general-umbral-mas-uno.ts t2-nogal-roble.spec.ts
+3c	app	Mismo código con dos casos más, uno a cada lado del borde: rojo	./scripts/par.sh 2-segundo-caso 02b-general-umbral-mas-uno.ts t4-borde.spec.ts
+4a	app	Antes de «limpiar»: el código general con la suite de cuatro casos, verde	./scripts/par.sh 2-segundo-caso 02-general.ts t4-borde.spec.ts
+4b	app	«Limpiado» con los tests reescritos a la vez: verde, y el comportamiento cambió	./scripts/par.sh 2-segundo-caso 04-limpiado.ts t4b-reescrito.spec.ts
+4c	app	El mismo cambio con los tests intactos: rojo	./scripts/par.sh 2-segundo-caso 04-limpiado.ts t4-borde.spec.ts

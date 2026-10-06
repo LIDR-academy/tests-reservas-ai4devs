@@ -1,0 +1,8 @@
+✔✖
+ ERRORS 
+
+❯ qué salas están libres / con los datos mínimos: una sala sin reservas
+
+ℹ TypeError: Cannot read properties of null (reading 'toLocaleString')
+
+Tests  1 passed, 1 failed (2)

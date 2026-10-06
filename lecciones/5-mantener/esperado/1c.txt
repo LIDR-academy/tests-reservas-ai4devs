@@ -1,0 +1,6 @@
+  ✔ una sala cerrada no admite reservas (1.23ms)
+  ✖ una reserva por encima del aforo se rechaza (0.59ms)
+  ✖ una reserva que llena justo el aforo se admite (0.13ms)
+
+ℹ AssertionError: expected { admitida: true } to deeply equal { admitida: false, …(1) }
+ℹ AssertionError: expected { admitida: false, …(1) } to deeply equal { admitida: true }
