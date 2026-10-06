@@ -53,7 +53,7 @@ Todas se han ejecutado y se ve lo que dice cada una. Después de cada una, desha
 
 - **La restricción solo frena la misma sala.** En `tests/concurrencia.spec.ts` cambia `sala: 'Nogal'` por `sala: 'Cedro'` en `segunda` y ejecuta el paso `2b`. Con la restricción puesta, el test sigue en rojo: las dos peticiones salen `{ ok: true }` y la tabla acaba con Nogal y Cedro solapadas en el tiempo, porque `sala WITH =` solo compara filas de la misma sala.
 - **Ningún test da por hecho un identificador.** En `tests/visibilidad_vaciando.spec.ts` deja dos tests idénticos (copia el test y cambia su título) que inserten una reserva con `RETURNING id` y comprueben `assert.equal(rows[0].id, 1)`, y ejecuta el paso `4b`. El primero pasa y el segundo cae con `expected 2 to equal 1`: `TRUNCATE reservas` a secas no reinicia el contador.
-- **La prueba de los treinta segundos, versión datos.** En `tests/fixture.spec.ts` cambia el aforo de Arce (`('Arce', 20)`) por `NULL` y ejecuta el paso `5a`: ahora cae también el test del juego común, con el mismo `TypeError`. Es lo que el aforo de Arce tapaba.
+- **Una prueba de treinta segundos: borra un campo del juego de datos común.** En `tests/fixture.spec.ts` cambia el aforo de Arce (`('Arce', 20)`) por `NULL` y ejecuta el paso `5a`: ahora cae también el test del juego común, con el mismo `TypeError`. Es lo que el aforo de Arce tapaba.
 
 ## Lo que no está aquí
 
